@@ -4,7 +4,9 @@ import useRoute from '@/Hooks/useRoute';
 import useTypedPage from '@/Hooks/useTypedPage';
 import { Head } from '@inertiajs/react';
 // @ts-ignore
-import WelcomeUser from "@/Pages/User/WelcomeUser.jsx";
+import {WelcomeUser} from "@/Pages/User/WelcomeUser.jsx";
+import {Button} from "@/Components/ui/button";
+import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/Components/ui/card";
 
 interface Props {
   canLogin: boolean;
@@ -72,7 +74,21 @@ export default function Welcome({
               />
             </svg>
           </div>
+            <Button variant="outline" size="lg"> Button from shadcn</Button>
 
+            <Card className="mt-2">
+                <CardHeader>
+                    <CardTitle>Card from shadcn </CardTitle>
+                    <CardDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. </CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <p>Contenido adicional</p>
+                </CardContent>
+                <CardFooter>
+                    <p>Footer card</p>
+                </CardFooter>
+            </Card>
+            <br/>
             <WelcomeUser />
 
           <div className="flex justify-center mt-16 px-6 sm:items-center sm:justify-between">
