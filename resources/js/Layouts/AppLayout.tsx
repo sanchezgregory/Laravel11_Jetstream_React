@@ -169,7 +169,7 @@ export default function AppLayout({
                   ) : null}
                 </div>
 
-                {/* <!-- Settings Dropdown --> */}
+                {/* <!-- User Management Dropdown --> */}
                 <div className="ml-3 relative">
                   <Dropdown
                     align="right"
